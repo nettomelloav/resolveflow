@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ResolveFlow — do cartão ao DaVinci Resolve em poucos cliques</title>
+    <meta name="description" content="App gratuito para Mac: copia cartões de câmera e drone com verificação SHA-256 para até 3 HDs, cria a estrutura do projeto e monta o projeto no DaVinci Resolve Studio com bins, preset e proxies.">
+    <meta property="og:title" content="ResolveFlow — do cartão ao DaVinci Resolve em poucos cliques">
+    <meta property="og:description" content="Cópia verificada do cartão, pastas do projeto, biblioteca, bins e proxies no DaVinci Resolve. Grátis para Mac.">
+    <meta property="og:image" content="assets/app-principal.jpg">
+    <meta name="theme-color" content="#121417">
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap">
+    <link rel="stylesheet" href="assets/site.css?v=4">
+</head>
+<body>
+
+<!-- ============================ Navegação ============================ -->
+<header class="nav">
+    <a class="marca" href="#topo" aria-label="ResolveFlow">
+        <img class="logo" src="assets/favicon.png" alt="" width="30" height="30">
+        <span>Resolve<b>Flow</b></span>
+    </a>
+    <nav class="links">
+        <a href="#backup">Backup</a>
+        <a href="#recursos">Recursos</a>
+        <a href="#fluxo">Como funciona</a>
+        <a href="#instalar">Instalar</a>
+        <a href="#perguntas">Perguntas</a>
+        <a href="#cafe" class="link-cafe">☕ Café</a>
+    </nav>
+    <a class="botao botao-pequeno" href="#baixar">Baixar grátis</a>
+</header>
+
+<main id="topo">
+    <!-- ============================ Hero ============================ -->
+    <section class="hero">
+        <div class="hero-texto">
+            <span class="selo"><span class="led"></span> App gratuito para Mac · DaVinci Resolve Studio</span>
+            <h1>Do cartão ao <span class="grad">DaVinci Resolve</span> em poucos cliques.</h1>
+            <p class="lead">Insira o cartão da câmera ou do drone. O ResolveFlow faz o <b>backup simultâneo
+                em até 3 HDs</b>, confere cada arquivo por SHA-256, cria as pastas do projeto e monta o projeto
+                no DaVinci: biblioteca, preset, bins organizados e proxies prontos.</p>
+            <div class="ctas">
+                <a class="botao" data-download href="#baixar">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0l-5-5m5 5l5-5M4 21h16"/></svg>
+                    Baixar grátis
+                </a>
+                <a class="botao fantasma" href="#fluxo">Como funciona</a>
+            </div>
+            <ul class="mini-info">
+                <li><b>100%</b> grátis</li>
+                <li><b>SHA-256</b> em cada arquivo</li>
+                <li><b>3</b> HDs ao mesmo tempo</li>
+                <li>macOS · Apple Silicon</li>
+            </ul>
+        </div>
+        <figure class="vitrine">
+            <img class="icone-flutuante" src="assets/icone.png" alt="Ícone do ResolveFlow" width="180" height="180">
+            <div class="janela">
+                <div class="barra-janela"><span class="bolinhas"><i></i><i></i><i></i></span><span>ResolveFlow</span></div>
+                <img src="assets/app-principal.jpg" alt="Janela principal do ResolveFlow: cartões, clipes com miniaturas, projeto, destinos e progresso por etapa" width="1760" height="1146">
+            </div>
+        </figure>
+    </section>
+
+
+    <!-- ============================ Destaque: backup simultâneo (animação explicativa) ============================ -->
+    <section class="secao destaque" id="backup">
+        <div class="destaque-grade">
+            <div class="destaque-texto">
+                <span class="kicker">Destaque — Backup simultâneo</span>
+                <h2>Um cartão. <span class="grad">Três HDs ao mesmo tempo.</span></h2>
+                <p class="sub-secao">Você insere o cartão e o ResolveFlow lê cada arquivo <b>uma única vez</b>,
+                    gravando em paralelo no HD de trabalho e em até 2 HDs de backup.</p>
+                <ul class="lista-check">
+                    <li><b>Mesma leitura, três cópias:</b> o cartão não é lido três vezes, então o backup duplo não triplica o tempo.</li>
+                    <li><b>SHA-256 em cada HD:</b> toda cópia é relida do disco e conferida antes de receber o nome final.</li>
+                    <li><b>Projeto e backups organizados:</b> o HD de trabalho recebe o projeto completo; os backups, só a cópia do cartão em “… - Backup 1/CAM1/CARD 1”.</li>
+                    <li><b>HD desconectou?</b> Só ele pausa. Os outros seguem, e ele retoma quando voltar.</li>
+                </ul>
+            </div>
+
+            <figure class="anim" aria-label="Animação: o cartão entra no MacBook e é copiado ao mesmo tempo para o HD de trabalho e dois HDs de backup, que recebem as pastas do projeto">
+                <svg viewBox="0 0 1100 600" role="img">
+                    <defs>
+                        <linearGradient id="gFluxo" x1="0" x2="1"><stop offset="0" stop-color="#00d4ff"/><stop offset=".55" stop-color="#2f6bff"/><stop offset="1" stop-color="#8a2bff"/></linearGradient>
+                        <linearGradient id="gTela" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1b1e23"/><stop offset="1" stop-color="#121417"/></linearGradient>
+                        <filter id="brilho" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="4"/></filter>
+                        <path id="c1" d="M440 330 C 600 330, 620 115, 790 115"/>
+                        <path id="c2" d="M440 330 C 600 330, 620 300, 790 300"/>
+                        <path id="c3" d="M440 330 C 600 330, 620 485, 790 485"/>
+                    </defs>
+
+                    <!-- MacBook -->
+                    <g class="mac">
+                        <rect x="70" y="150" width="340" height="215" rx="14" fill="#2a2f36"/>
+                        <rect x="82" y="162" width="316" height="191" rx="6" fill="url(#gTela)"/>
+                        <g class="tela-app">
+                            <rect x="96" y="176" width="70" height="40" rx="4" fill="#20242a" stroke="#00d4ff" stroke-opacity=".6"/>
+                            <rect x="176" y="176" width="140" height="78" rx="4" fill="#20242a"/>
+                            <rect x="182" y="182" width="40" height="24" rx="2" fill="#6f8a3a"/><rect x="226" y="182" width="40" height="24" rx="2" fill="#c79a52"/><rect x="270" y="182" width="40" height="24" rx="2" fill="#4f78b5"/>
+                            <rect x="182" y="212" width="40" height="24" rx="2" fill="#77a046"/><rect x="226" y="212" width="40" height="24" rx="2" fill="#e0784a"/><rect x="270" y="212" width="40" height="24" rx="2" fill="#5d8a30"/>
+                            <rect x="326" y="176" width="58" height="78" rx="4" fill="#20242a"/>
+                            <rect x="96" y="266" width="288" height="72" rx="4" fill="#20242a"/>
+                            <rect class="barra-tela b1" x="106" y="280" width="0" height="6" rx="3" fill="#00d4ff"/>
+                            <rect class="barra-tela b2" x="106" y="296" width="0" height="6" rx="3" fill="#00d4ff"/>
+                            <rect class="barra-tela b3" x="106" y="312" width="0" height="6" rx="3" fill="#3ddc97"/>
+                        </g>
+                        <path d="M40 365 H440 L420 388 H60 Z" fill="#3a3f47"/>
+                        <rect x="210" y="365" width="60" height="6" rx="3" fill="#2a2f36"/>
+                        <rect x="418" y="372" width="18" height="4" rx="2" fill="#121417"/>
+                    </g>
+
+                    <!-- Cartão SD entrando pela lateral -->
+                    <g class="cartao">
+                        <path d="M0 0 H50 L64 14 V86 H0 Z" fill="#e8edf2"/>
+                        <rect x="8" y="8" width="7" height="18" rx="2" fill="#1b1e23"/><rect x="19" y="8" width="7" height="18" rx="2" fill="#1b1e23"/>
+                        <rect x="30" y="8" width="7" height="18" rx="2" fill="#1b1e23"/><rect x="41" y="8" width="7" height="18" rx="2" fill="#1b1e23"/>
+                        <text x="32" y="66" text-anchor="middle" font-size="13" font-weight="700" fill="#2f6bff" font-family="Space Grotesk, sans-serif">SD</text>
+                    </g>
+
+                    <!-- Caminhos até os três HDs -->
+                    <g class="caminhos">
+                        <use href="#c1" class="trilha"/><use href="#c2" class="trilha"/><use href="#c3" class="trilha"/>
+                        <use href="#c1" class="linha-fluxo"/><use href="#c2" class="linha-fluxo"/><use href="#c3" class="linha-fluxo"/>
+                        <g class="pacotes">
+                            <circle r="7" fill="#00d4ff" filter="url(#brilho)"><animateMotion dur="1.4s" repeatCount="indefinite"><mpath href="#c1"/></animateMotion></circle>
+                            <circle r="7" fill="#2f6bff" filter="url(#brilho)"><animateMotion dur="1.4s" repeatCount="indefinite"><mpath href="#c2"/></animateMotion></circle>
+                            <circle r="7" fill="#8a2bff" filter="url(#brilho)"><animateMotion dur="1.4s" repeatCount="indefinite"><mpath href="#c3"/></animateMotion></circle>
+                            <circle r="4" fill="#e8edf2"><animateMotion dur="1.4s" begin="0.7s" repeatCount="indefinite"><mpath href="#c1"/></animateMotion></circle>
+                            <circle r="4" fill="#e8edf2"><animateMotion dur="1.4s" begin="0.7s" repeatCount="indefinite"><mpath href="#c2"/></animateMotion></circle>
+                            <circle r="4" fill="#e8edf2"><animateMotion dur="1.4s" begin="0.7s" repeatCount="indefinite"><mpath href="#c3"/></animateMotion></circle>
+                        </g>
+                    </g>
+
+                    <!-- HDs -->
+                    <g class="hd" transform="translate(790 60)">
+                        <rect width="290" height="110" rx="14" fill="#1b1e23" stroke="#00d4ff" stroke-opacity=".55"/>
+                        <rect x="18" y="20" width="40" height="52" rx="7" fill="#2a2f36"/><circle cx="38" cy="58" r="5" fill="#00d4ff"/>
+                        <text x="74" y="38" class="t-rot">HD DE TRABALHO</text><text x="74" y="62" class="t-nome">SSD Edição</text>
+                        <rect x="18" y="86" width="210" height="8" rx="4" fill="#2a2f36"/><rect class="enche" x="18" y="86" width="210" height="8" rx="4" fill="#00d4ff"/>
+                        <text x="272" y="62" text-anchor="end" class="ok-sha">✓ SHA-256</text>
+                    </g>
+                    <g class="hd" transform="translate(790 245)">
+                        <rect width="290" height="110" rx="14" fill="#1b1e23" stroke="#2f6bff" stroke-opacity=".55"/>
+                        <rect x="18" y="20" width="40" height="52" rx="7" fill="#2a2f36"/><circle cx="38" cy="58" r="5" fill="#2f6bff"/>
+                        <text x="74" y="38" class="t-rot">BACKUP 1</text><text x="74" y="62" class="t-nome">HD Backup A</text>
+                        <rect x="18" y="86" width="210" height="8" rx="4" fill="#2a2f36"/><rect class="enche" x="18" y="86" width="210" height="8" rx="4" fill="#2f6bff"/>
+                        <text x="272" y="62" text-anchor="end" class="ok-sha">✓ SHA-256</text>
+                    </g>
+                    <g class="hd" transform="translate(790 430)">
+                        <rect width="290" height="110" rx="14" fill="#1b1e23" stroke="#8a2bff" stroke-opacity=".55"/>
+                        <rect x="18" y="20" width="40" height="52" rx="7" fill="#2a2f36"/><circle cx="38" cy="58" r="5" fill="#8a2bff"/>
+                        <text x="74" y="38" class="t-rot">BACKUP 2</text><text x="74" y="62" class="t-nome">HD Backup B</text>
+                        <rect x="18" y="86" width="210" height="8" rx="4" fill="#2a2f36"/><rect class="enche" x="18" y="86" width="210" height="8" rx="4" fill="#8a2bff"/>
+                        <text x="272" y="62" text-anchor="end" class="ok-sha">✓ SHA-256</text>
+                    </g>
+
+                    <!-- Pastas que aparecem no fim -->
+                    <g class="pastas">
+                        <g class="pasta-item" style="--i:0"><text x="790" y="190" class="t-pasta">📁 Lavoura Safra 2026 - Novembro 16<tspan x="814" dy="18">/ CAM1 / CARD 1</tspan></text></g>
+                        <g class="pasta-item" style="--i:1"><text x="790" y="230" class="t-pasta t-suave">📁 DATABASE · RENDER · ARQUIVOS</text></g>
+                        <g class="pasta-item" style="--i:2"><text x="790" y="377" class="t-pasta">📁 … - Backup 1 / CAM1 / CARD 1</text></g>
+                        <g class="pasta-item" style="--i:3"><text x="790" y="562" class="t-pasta">📁 … - Backup 2 / CAM1 / CARD 1</text></g>
+                    </g>
+
+                    <!-- legenda das fases -->
+                    <g class="fases" font-family="JetBrains Mono, monospace" font-size="15">
+                        <text x="70" y="450" class="fase f1">1 · cartão inserido</text>
+                        <text x="70" y="478" class="fase f2">2 · lendo uma vez, gravando em 3 HDs</text>
+                        <text x="70" y="506" class="fase f3">3 · conferido por SHA-256</text>
+                        <text x="70" y="534" class="fase f4">4 · pastas do projeto prontas</text>
+                    </g>
+                </svg>
+            </figure>
+        </div>
+    </section>
+
+    <!-- ============================ Recursos ============================ -->
+    <section class="secao" id="recursos">
+        <div class="cabeca-secao">
+            <span class="kicker">01 — Recursos</span>
+            <h2>O começo de todo projeto, sem trabalho braçal.</h2>
+        </div>
+        <div class="grade-recursos">
+            <article class="recurso"><span class="icone">◉</span><h3>Detecta o cartão</h3>
+                <p>Ao inserir um cartão com DCIM, PRIVATE, CLIP ou XDROOT, o app abre sozinho com as miniaturas, a duração e o codec de cada clipe.</p></article>
+            <article class="recurso"><span class="icone">✓</span><h3>Cópia verificada</h3>
+                <p>Cada arquivo é conferido por SHA-256 depois de gravado. Um manifesto fica ao lado de cada CARD, pronto para <code>shasum -c</code>.</p></article>
+            <article class="recurso"><span class="icone">⛁</span><h3>Até 3 HDs</h3>
+                <p>HD de trabalho com o projeto completo e até 2 backups só com a cópia do cartão. Lê o cartão uma vez e grava nos três.</p></article>
+            <article class="recurso"><span class="icone">🔒</span><h3>Cartão intocado</h3>
+                <p>O cartão é somente leitura: nada é formatado, apagado, movido ou renomeado. Os nomes originais dos arquivos são mantidos.</p></article>
+            <article class="recurso"><span class="icone">▤</span><h3>Pastas do projeto</h3>
+                <p>“Nome AAAA - Mês DD” com CAM ou CAM1–3, DRONE, ARQUIVOS, RENDER e DATABASE. Cada cartão vai para CARD 1, CARD 2…</p></article>
+            <article class="recurso"><span class="icone">▶</span><h3>Projeto no DaVinci</h3>
+                <p>Cria a biblioteca em DATABASE, o projeto com o nome da pasta, aplica o preset e define RENDER como destino de exportação.</p></article>
+            <article class="recurso"><span class="icone">☰</span><h3>Bins organizados</h3>
+                <p>Master › TIMELINE, CAM1 › CARD 1, CARD 2…, CAM2, DRONE e ARQUIVOS, com cada pasta importada no seu bin.</p></article>
+            <article class="recurso"><span class="icone">◧</span><h3>Proxies prontos</h3>
+                <p>Proxies ProRes com o timecode do original, ligados a cada clipe. Modos “Arquivos pesados”, “Arquivos leves” e “Manual”.</p></article>
+            <article class="recurso"><span class="icone">⏸</span><h3>À prova de tropeço</h3>
+                <p>Se um HD sair no meio, só ele pausa e retoma quando voltar. Dois cartões ao mesmo tempo copiam em paralelo.</p></article>
+        </div>
+    </section>
+
+    <!-- ============================ Fluxo ============================ -->
+    <section class="secao" id="fluxo">
+        <div class="cabeca-secao">
+            <span class="kicker">02 — Como funciona</span>
+            <h2>Um botão, cinco etapas.</h2>
+            <p class="sub-secao">Escolha os clipes, o projeto, a origem e os HDs. Clique em <b>Criar projeto</b> e acompanhe cada etapa com MB/s e tempo restante.</p>
+        </div>
+        <div class="fluxo">
+            <ol class="etapas" aria-label="Etapas do ResolveFlow">
+                <li><span class="rot">Cópia</span><span class="barra"><i style="--d:0s"></i></span><span class="mono">412 MB/s</span></li>
+                <li><span class="rot">Checksum</span><span class="barra"><i style="--d:.5s"></i></span><span class="mono">SHA-256</span></li>
+                <li><span class="rot">Pastas</span><span class="barra"><i style="--d:1s"></i></span><span class="mono">CARD 1</span></li>
+                <li><span class="rot">DaVinci</span><span class="barra"><i style="--d:1.5s"></i></span><span class="mono">bins · preset</span></li>
+                <li><span class="rot">Proxies</span><span class="barra"><i style="--d:2s"></i></span><span class="mono">ProRes</span></li>
+            </ol>
+            <div class="terminal" aria-label="Estrutura de pastas criada">
+                <div class="barra-term"><span class="bolinhas"><i></i><i></i><i></i></span> Viagem Ponta 2026 - Junho 15</div>
+<pre><span class="pasta">CAM1/</span>
+  <span class="pasta">CARD 1/</span>           <span class="cinza">← cópia fiel do cartão</span>
+  CARD 1 - SHA256.txt
+<span class="pasta">CAM2/</span>  <span class="pasta">DRONE/</span>  <span class="pasta">ARQUIVOS/</span>  <span class="pasta">RENDER/</span>
+<span class="pasta">DATABASE/</span>
+  <span class="pasta">Biblioteca/</span>       <span class="cinza">← biblioteca do DaVinci</span>
+  <span class="pasta">Proxies/</span>  <span class="pasta">Cache/</span>  <span class="pasta">Stills/</span>  <span class="pasta">Backups/</span></pre>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================ Por dentro ============================ -->
+    <section class="secao">
+        <div class="cabeca-secao">
+            <span class="kicker">03 — Por dentro</span>
+            <h2>Tudo numa janela. Presets nos Ajustes.</h2>
+            <p class="sub-secao">Cartões à esquerda, clipes no centro (marque só os que quer usar), projeto à direita. Nos Ajustes, presets de resolução e frame rate e os modos de proxy e cache.</p>
+        </div>
+        <div class="prints">
+            <figure class="print"><img src="assets/app-principal.jpg" alt="Janela principal do ResolveFlow" loading="lazy" width="1760" height="1146"><figcaption>Janela principal</figcaption></figure>
+            <figure class="print"><img src="assets/app-ajustes.jpg" alt="Ajustes do ResolveFlow com presets e modos de proxy" loading="lazy" width="1760" height="1068"><figcaption>Ajustes</figcaption></figure>
+        </div>
+    </section>
+
+    <!-- ============================ Instalar ============================ -->
+    <section class="secao" id="instalar">
+        <div class="cabeca-secao">
+            <span class="kicker">04 — Instalar</span>
+            <h2>Instale uma vez. Depois é só inserir o cartão.</h2>
+        </div>
+        <ol class="passos">
+            <li><span class="num">1</span><h3>Baixe e instale</h3>
+                <p>Dois cliques no <code>ResolveFlow.pkg</code>. Se o macOS disser que não pode abrir: <i>Ajustes do Sistema › Privacidade e Segurança</i> › <b>Abrir Mesmo Assim</b>.</p></li>
+            <li><span class="num">2</span><h3>Permita o acesso</h3>
+                <p>Na primeira cópia, o macOS pergunta se o ResolveFlow pode acessar <i>volumes removíveis</i>: clique em <b>Permitir</b>.</p></li>
+            <li><span class="num">3</span><h3>Ligue o DaVinci</h3>
+                <p>No DaVinci: <i>Preferences › System › General › External scripting using</i> = <b>Local</b>. Salve e reinicie o DaVinci.</p></li>
+        </ol>
+        <div class="requisitos">
+            <div><span class="kicker">Requisitos</span>
+                <ul>
+                    <li>Mac com <b>Apple Silicon</b> (M1 ou mais novo), macOS 14 ou mais novo</li>
+                    <li>DaVinci Resolve <b>Studio</b> 21</li>
+                    <li>Para proxies: <code>ffmpeg</code> (<code>brew install ffmpeg</code>)</li>
+                </ul></div>
+            <div class="terminal" aria-label="Diagnóstico do ResolveFlow">
+                <div class="barra-term"><span class="bolinhas"><i></i><i></i><i></i></span> Ajustes › Testar conexão</div>
+<pre><span class="ok">OK</span>     Python embutido
+<span class="ok">OK</span>     ffmpeg encontrado
+<span class="ok">OK</span>     DaVinci 21 conectado
+<span class="cinza">Desenvolvido por Netto Mello Videomaker</span></pre>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================ Perguntas ============================ -->
+    <section class="secao" id="perguntas">
+        <div class="cabeca-secao">
+            <span class="kicker">05 — Perguntas</span>
+            <h2>Perguntas frequentes</h2>
+        </div>
+        <div class="faq">
+            <details><summary>É grátis mesmo?</summary><p>Sim. Sem cadastro, sem marca d'água e sem limite de cartões.</p></details>
+            <details><summary>O cartão é alterado de alguma forma?</summary><p>Não. O ResolveFlow só lê o cartão: nunca formata, apaga, move ou renomeia nada nele. Depois do “Concluído e verificado”, pode ejetar.</p></details>
+            <details><summary>Funciona no DaVinci Resolve gratuito?</summary><p>A cópia e as pastas funcionam com qualquer versão. A montagem do projeto usa o scripting externo do DaVinci, que é um recurso do DaVinci Resolve <b>Studio</b>.</p></details>
+            <details><summary>Funciona em Mac Intel ou no Windows?</summary><p>Por enquanto, só em Macs com Apple Silicon (M1 ou mais novo).</p></details>
+            <details><summary>Por que ele pede para fechar o DaVinci?</summary><p>Para criar a biblioteca do projeto novo, o DaVinci precisa estar fechado: ele só lê a lista de bibliotecas ao abrir. Com o DaVinci fechado, o ResolveFlow cria a biblioteca e o abre sozinho. Ao abrir, clique em <b>OK</b> na lista de bibliotecas.</p></details>
+            <details><summary>Como funcionam os modos de proxy e cache?</summary><p><b>Arquivos pesados</b>: Quarter, ProRes Proxy. <b>Arquivos leves</b>: Half, ProRes LT. <b>Manual</b>: você configura no DaVinci. Os codecs de mídia otimizada e render cache vêm de um preset de projeto que você salva uma vez no DaVinci; o ResolveFlow leva esse preset para todos os projetos novos.</p></details>
+            <details><summary>E se um HD desconectar no meio da cópia?</summary><p>Só aquele HD pausa; os outros continuam. Quando ele volta, a cópia retoma sozinha. Se o cartão sair, tudo pausa até ele voltar.</p></details>
+            <details><summary>Posso copiar só alguns clipes?</summary><p>Sim. Na área de clipes, clique para desmarcar o que não quer. Só os marcados (e os arquivos que os acompanham, como o XML da Sony) são copiados.</p></details>
+        </div>
+    </section>
+
+    <!-- ============================ Download ============================ -->
+    <section class="baixar" id="baixar">
+        <div class="baixar-conteudo">
+            <img src="assets/icone.png" alt="" width="120" height="120" class="icone-baixar">
+            <h2>Comece agora. É grátis.</h2>
+            <p>ResolveFlow <span id="versao">v1.0.4</span> · macOS 14+ · Apple Silicon · ~6 MB</p>
+            <a class="botao botao-grande" data-download href="#">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0l-5-5m5 5l5-5M4 21h16"/></svg>
+                Baixar ResolveFlow
+            </a>
+            <p class="miudo">Instalador .pkg sem assinatura da Apple: no primeiro uso, libere em <i>Privacidade e Segurança</i>.
+                <a id="linkCodigo" href="#">Guia e versões anteriores</a></p>
+            <p class="convite-cafe">Gostou? <a href="#cafe">Pague um café ☕</a></p>
+        </div>
+    </section>
+
+    <!-- ============================ Café (Pix) ============================ -->
+    <section class="secao" id="cafe">
+        <div class="cafe">
+            <div class="cafe-texto">
+                <span class="kicker">06 — Pague um café</span>
+                <h2>O app é grátis. O café é opcional. ☕</h2>
+                <p>Se o ResolveFlow economizou o seu tempo de ingest, você pode pagar um café para ajudar a manter
+                    o projeto e criar novos recursos. Qualquer valor, via Pix.</p>
+                <div class="pix-chave">
+                    <span class="rotulo-pix">Chave Pix (CPF)</span>
+                    <strong id="pixChave">997.502.011-91</strong>
+                    <span class="pix-nome">Recebedor: <b id="pixNome">Claro Barbosa</b></span>
+                </div>
+                <div class="pix-botoes">
+                    <button class="botao" id="copiarPix" type="button">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h3"/></svg>
+                        Copiar Pix copia e cola
+                    </button>
+                    <button class="botao fantasma" id="copiarChave" type="button">Copiar só a chave</button>
+                </div>
+                <p class="pix-aviso" id="pixAviso" role="status" aria-live="polite">No celular: copie e cole em <i>Pix › Pix copia e cola</i> no app do seu banco.</p>
+            </div>
+            <figure class="pix-qr">
+                <img src="assets/pix-qr.svg" alt="QR Code Pix para pagar um café" width="264" height="264">
+                <figcaption>Aponte a câmera do app do banco</figcaption>
+            </figure>
+        </div>
+    </section>
+</main>
+
+<footer class="rodape">
+    <div>
+        <span class="marca"><img class="logo" src="assets/favicon.png" alt="" width="26" height="26"><span>Resolve<b>Flow</b></span></span>
+        <p>Desenvolvido por <b>Netto Mello Videomaker</b> · <a href="#cafe">☕ Pague um café</a></p>
+    </div>
+    <p class="aviso-legal">DaVinci Resolve é marca da Blackmagic Design. O ResolveFlow é um app independente e gratuito,
+        sem vínculo com a Blackmagic Design.</p>
+</footer>
+
+<script src="assets/config.js?v=4"></script>
+<script src="assets/pix.js?v=4"></script>
+<script src="assets/site.js?v=4"></script>
+</body>
+</html>
