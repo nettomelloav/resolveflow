@@ -2,11 +2,14 @@
 
 ## Instalar
 
-1. Dê dois cliques em **ResolveFlow-1.0.4.pkg**.
+1. Dê dois cliques em **ResolveFlow.pkg**.
 2. Como o instalador não tem assinatura da Apple, o macOS pode dizer que ele “não pode ser aberto”.
    Nesse caso abra **Ajustes do Sistema → Privacidade e Segurança**, role até o fim e clique em
-   **Abrir Mesmo Assim** ao lado de “ResolveFlow-1.0.4.pkg”. Confirme com sua senha.
+   **Abrir Mesmo Assim** ao lado de “ResolveFlow.pkg”. Confirme com sua senha.
 3. Siga o instalador. No fim, o app abre sozinho e a detecção de cartões já fica ligada.
+4. Na tela **Ativar o ResolveFlow**, cole a chave de licença que você recebeu depois da compra
+   (começa com `RF1-`) e clique em **Ativar**. A chave é pessoal, vai no seu nome e ativa sem internet.
+   Ainda não tem a chave? Compre em https://nettomelloav.github.io/resolveflow/#comprar
 
 Requisitos: Mac com Apple Silicon, macOS 14 ou mais novo e DaVinci Resolve Studio.
 Para gerar proxies, instale o ffmpeg uma vez: `brew install ffmpeg`.
