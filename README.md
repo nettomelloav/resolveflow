@@ -6,11 +6,11 @@ DaVinci Resolve Studio: biblioteca, preset, bins organizados e proxies.
 
 - Página: https://nettomelloav.github.io/resolveflow/
 - Comprar: https://nettomelloav.github.io/resolveflow/#comprar
-- Download (sempre a versão mais nova; pede a chave de licença): https://github.com/nettomelloav/resolveflow/releases/latest/download/ResolveFlow.pkg
+- Download (sempre a versão mais nova; pede a chave de licença): https://github.com/nettomelloav/resolveflow/releases/latest/download/ResolveFlow.dmg (instalador + LEIA-ME em PDF + vídeo)
 
 ## Instalar
 
-1. Dois cliques em `ResolveFlow.pkg`. Se o macOS disser que não pode abrir:
+1. Abra o `ResolveFlow.dmg` e dê dois cliques em `ResolveFlow.pkg`. Se o macOS disser que não pode abrir:
    **Ajustes do Sistema › Privacidade e Segurança › Abrir Mesmo Assim** (o instalador não tem assinatura da Apple).
 2. Na primeira cópia, permita o acesso a **volumes removíveis**.
 3. No DaVinci: **Preferences › System › General › External scripting using = Local**, salve e reinicie.

@@ -2,7 +2,7 @@
 
 ## Instalar
 
-1. Dê dois cliques em **ResolveFlow.pkg**.
+1. Abra o **ResolveFlow.dmg** (vêm junto o LEIA-ME em PDF e o vídeo de instalação) e dê dois cliques em **ResolveFlow.pkg**.
 2. Como o instalador não tem assinatura da Apple, o macOS pode dizer que ele “não pode ser aberto”.
    Nesse caso abra **Ajustes do Sistema → Privacidade e Segurança**, role até o fim e clique em
    **Abrir Mesmo Assim** ao lado de “ResolveFlow.pkg”. Confirme com sua senha.
