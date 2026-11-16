@@ -11,6 +11,7 @@
     document.querySelectorAll('[data-download]').forEach((a) => { a.href = urlDownload; });
     if ($('#linkCodigo')) $('#linkCodigo').href = `https://github.com/${cfg.repo}`;
     if ($('#versao') && cfg.versao) $('#versao').textContent = 'v' + cfg.versao;
+    if ($('#versaoRodape') && cfg.versao) $('#versaoRodape').textContent = 'versão ' + cfg.versao;
 
     // ---------------------------------------------------------------- WhatsApp do comprovante
     if ($('#linkWhats') && cfg.whatsapp) {

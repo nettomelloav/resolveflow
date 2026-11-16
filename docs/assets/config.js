@@ -3,7 +3,7 @@
 window.CONFIG = {
     repo: "nettomelloav/resolveflow",
     arquivo: "ResolveFlow.dmg",
-    versao: "1.0.5",
+    versao: "1.0.6",
     preco: "49,99",
     whatsapp: "5562992844088",  // recebe o comprovante do Pix
 };
