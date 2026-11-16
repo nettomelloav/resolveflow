@@ -1,4 +1,4 @@
-// ResolveFlow — página oficial: link de download (Release "latest" no GitHub) e Pix do café.
+// ResolveFlow — página oficial: link de download (Release "latest" no GitHub), Pix da compra e WhatsApp do comprovante.
 (function () {
     const $ = (s) => document.querySelector(s);
     const cfg = window.CONFIG || {};
@@ -11,6 +11,12 @@
     document.querySelectorAll('[data-download]').forEach((a) => { a.href = urlDownload; });
     if ($('#linkCodigo')) $('#linkCodigo').href = `https://github.com/${cfg.repo}`;
     if ($('#versao') && cfg.versao) $('#versao').textContent = 'v' + cfg.versao;
+
+    // ---------------------------------------------------------------- WhatsApp do comprovante
+    if ($('#linkWhats') && cfg.whatsapp) {
+        const texto = `Olá! Paguei o Pix de R$ ${cfg.preco || '49,99'} do ResolveFlow. Segue o comprovante. Meu nome completo: `;
+        $('#linkWhats').href = `https://wa.me/${cfg.whatsapp}?text=${encodeURIComponent(texto)}`;
+    }
 
     // ---------------------------------------------------------------- etapas animadas quando aparecem
     const fluxo = $('.etapas');
@@ -50,8 +56,8 @@
             aviso.classList.toggle('copiado', ok);
         };
         $('#copiarPix').addEventListener('click', async () => avisar(await copiar(pix.copiaECola),
-            'Pix copia e cola copiado! Cole no app do seu banco. Obrigado ☕'));
+            'Pix copia e cola copiado (R$ 49,99)! Cole no app do seu banco e depois mande o comprovante.'));
         $('#copiarChave').addEventListener('click', async () => avisar(await copiar(pix.chave.replace(/\D/g, '')),
-            'Chave copiada! Obrigado ☕'));
+            'Chave copiada! Pague R$ 49,99 e depois mande o comprovante.'));
     }
 })();

@@ -210,6 +210,11 @@ h2 { font-size: clamp(28px, 3.6vw, 42px); line-height: 1.12; letter-spacing: -.0
 .pix-nome { font-size: 14px; color: var(--suave); }
 .pix-botoes { display: flex; flex-wrap: wrap; gap: 10px; }
 .pix-aviso { font-size: 14px; min-height: 1.6em; }
+.compra-passos { margin: 18px 0 0; padding-left: 20px; display: grid; gap: 8px; color: var(--suave); }
+.compra-passos b { color: var(--texto, #e8edf2); }
+.botao-whats { background: #25d366; color: #0b0c10; box-shadow: 0 8px 28px rgba(37, 211, 102, .28); }
+.botao-whats:hover { box-shadow: 0 12px 36px rgba(37, 211, 102, .4); }
+.botao-whats svg { fill: none; stroke: currentColor; }
 .pix-aviso.copiado { color: var(--verde); }
 .pix-qr { margin: 0; text-align: center; }
 .pix-qr img { width: 220px; border-radius: 14px; background: #fff; padding: 10px; }
