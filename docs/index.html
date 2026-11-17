@@ -58,7 +58,7 @@
             <img class="icone-flutuante" src="assets/icone.png" alt="Ícone do ResolveFlow" width="180" height="180">
             <div class="janela">
                 <div class="barra-janela"><span class="bolinhas"><i></i><i></i><i></i></span><span>ResolveFlow</span></div>
-                <img src="assets/app-principal.jpg" alt="Janela principal do ResolveFlow: cartões, clipes com miniaturas, projeto, destinos e progresso por etapa" width="1760" height="1146">
+                <img src="assets/app-principal.jpg" alt="Janela principal do ResolveFlow: cartões, clipes com miniaturas, projeto, destinos e progresso por etapa" width="1760" height="1106">
             </div>
         </figure>
     </section>
@@ -201,6 +201,12 @@
                 <p>Proxies ProRes com o timecode do original, ligados a cada clipe. Modos “Arquivos pesados”, “Arquivos leves” e “Manual”.</p></article>
             <article class="recurso"><span class="icone">⏸</span><h3>À prova de tropeço</h3>
                 <p>Se um HD sair no meio, só ele pausa e retoma quando voltar. Dois cartões ao mesmo tempo copiam em paralelo.</p></article>
+            <article class="recurso"><span class="icone">⇉</span><h3>Só backup <em class="novo">novo</em></h3>
+                <p>Chegou da gravação e só quer garantir os arquivos? Escolha “Só backup”: copia e confere por SHA-256 em até 3 HDs, sem criar as pastas do projeto nem abrir o DaVinci.</p></article>
+            <article class="recurso"><span class="icone">⇄</span><h3>Uma origem por cartão <em class="novo">novo</em></h3>
+                <p>Com dois ou mais cartões inseridos, cada um fica com a sua origem: o primeiro vai para CAM1 e o segundo já aparece só com as que estão livres.</p></article>
+            <article class="recurso"><span class="icone">✎</span><h3>Pastas com o seu nome <em class="novo">novo</em></h3>
+                <p>Renomeie CAM, CAM1, CAM2, CAM3 e DRONE no próprio painel (ex.: FX3, A7SIII, Mini 4). As pastas e os bins do DaVinci usam o nome que você escolher.</p></article>
         </div>
     </section>
 
@@ -240,7 +246,7 @@
             <p class="sub-secao">Cartões à esquerda, clipes no centro (marque só os que quer usar), projeto à direita. Nos Ajustes, presets de resolução e frame rate e os modos de proxy e cache.</p>
         </div>
         <div class="prints">
-            <figure class="print"><img src="assets/app-principal.jpg" alt="Janela principal do ResolveFlow" loading="lazy" width="1760" height="1146"><figcaption>Janela principal</figcaption></figure>
+            <figure class="print"><img src="assets/app-principal.jpg" alt="Janela principal do ResolveFlow" loading="lazy" width="1760" height="1106"><figcaption>Janela principal</figcaption></figure>
             <figure class="print"><img src="assets/app-ajustes.jpg" alt="Ajustes do ResolveFlow com presets e modos de proxy" loading="lazy" width="1760" height="1068"><figcaption>Ajustes</figcaption></figure>
         </div>
     </section>
@@ -339,6 +345,8 @@
             <details><summary>Por que ele pede para fechar o DaVinci?</summary><p>Para criar a biblioteca do projeto novo, o DaVinci precisa estar fechado: ele só lê a lista de bibliotecas ao abrir. Com o DaVinci fechado, o ResolveFlow cria a biblioteca e o abre sozinho. Ao abrir, clique em <b>OK</b> na lista de bibliotecas.</p></details>
             <details><summary>Como funcionam os modos de proxy e cache?</summary><p><b>Arquivos pesados</b>: Quarter, ProRes Proxy. <b>Arquivos leves</b>: Half, ProRes LT. <b>Manual</b>: você configura no DaVinci. Os codecs de mídia otimizada e render cache vêm de um preset de projeto que você salva uma vez no DaVinci; o ResolveFlow leva esse preset para todos os projetos novos.</p></details>
             <details><summary>E se um HD desconectar no meio da cópia?</summary><p>Só aquele HD pausa; os outros continuam. Quando ele volta, a cópia retoma sozinha. Se o cartão sair, tudo pausa até ele voltar.</p></details>
+            <details><summary>Posso só fazer o backup, sem criar o projeto?</summary><p>Sim. No painel do projeto, escolha <b>Só backup</b>, dê um nome e escolha os HDs. O cartão vai para “Nome AAAA - Mês DD/CARD 1” em cada HD, com o manifesto SHA-256, sem as pastas do projeto e sem abrir o DaVinci. Os próximos cartões viram CARD 2, CARD 3…</p></details>
+            <details><summary>Dá para trocar os nomes CAM1, CAM2, DRONE?</summary><p>Sim. Ao lado de <b>Origem</b>, clique em <b>Renomear</b> e dê o nome que quiser para cada pasta, como o modelo da câmera. Vale para os próximos cartões; pastas já criadas não mudam.</p></details>
             <details><summary>Posso copiar só alguns clipes?</summary><p>Sim. Na área de clipes, clique para desmarcar o que não quer. Só os marcados (e os arquivos que os acompanham, como o XML da Sony) são copiados.</p></details>
         </div>
     </section>
@@ -348,7 +356,7 @@
         <div class="baixar-conteudo">
             <img src="assets/icone.png" alt="" width="120" height="120" class="icone-baixar">
             <h2>Já comprou? Baixe aqui.</h2>
-            <p>ResolveFlow <span id="versao">v1.0.6</span> · a mesma chave vale no Mac e no Windows</p>
+            <p>ResolveFlow <span id="versao">v1.0.7</span> · a mesma chave vale no Mac e no Windows</p>
             <div class="downloads">
                 <a class="botao botao-grande" data-download="mac" href="#">
                     <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0l-5-5m5 5l5-5M4 21h16"/></svg>
@@ -408,7 +416,7 @@
 <footer class="rodape">
     <div>
         <span class="marca"><img class="logo" src="assets/favicon.png" alt="" width="26" height="26"><span>Resolve<b>Flow</b></span></span>
-        <p>Desenvolvido por <b>Netto Mello Videomaker</b> · <span id="versaoRodape">versão 1.0.6</span> · <a href="#comprar">Comprar</a></p>
+        <p>Desenvolvido por <b>Netto Mello Videomaker</b> · <span id="versaoRodape">versão 1.0.7</span> · <a href="#comprar">Comprar</a></p>
     </div>
     <p class="aviso-legal">DaVinci Resolve é marca da Blackmagic Design. O ResolveFlow é um app independente,
         sem vínculo com a Blackmagic Design.</p>

@@ -4,7 +4,7 @@ window.CONFIG = {
     repo: "nettomelloav/resolveflow",
     arquivo: "ResolveFlow.dmg",
     arquivoWindows: "ResolveFlow-Setup.exe",
-    versao: "1.0.6",
+    versao: "1.0.7",
     preco: "49,97",
     whatsapp: "5562992844088",  // recebe o comprovante do Pix
 };
