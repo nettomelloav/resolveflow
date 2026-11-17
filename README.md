@@ -1,12 +1,13 @@
 # ResolveFlow
 
-**Do cartão ao DaVinci Resolve em poucos cliques.** App para Mac (R$ 49,97, pagamento único via Pix) que copia cartões de câmera e drone
+**Do cartão ao DaVinci Resolve em poucos cliques.** App para Mac e Windows (R$ 49,97, pagamento único via Pix) que copia cartões de câmera e drone
 com verificação SHA-256 para até 3 HDs, cria a estrutura do projeto e monta o projeto no
 DaVinci Resolve Studio: biblioteca, preset, bins organizados e proxies.
 
 - Página: https://nettomelloav.github.io/resolveflow/
 - Comprar: https://nettomelloav.github.io/resolveflow/#comprar
-- Download (sempre a versão mais nova; pede a chave de licença): https://github.com/nettomelloav/resolveflow/releases/latest/download/ResolveFlow.dmg (instalador + LEIA-ME em PDF + vídeo)
+- Download Mac (sempre a versão mais nova; pede a chave de licença): https://github.com/nettomelloav/resolveflow/releases/latest/download/ResolveFlow.dmg (instalador + LEIA-ME em PDF + vídeo)
+- Download Windows (beta): https://github.com/nettomelloav/resolveflow/releases/latest/download/ResolveFlow-Setup.exe
 
 ## Instalar
 

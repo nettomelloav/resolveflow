@@ -1,6 +1,16 @@
 # ResolveFlow — guia rápido
 
-## Instalar
+## Instalar no Windows (beta)
+
+1. Baixe **ResolveFlow-Setup.exe** (Windows 10/11, 64 bits) e abra.
+2. Se aparecer “O Windows protegeu o computador”: **Mais informações › Executar assim mesmo** (o instalador não tem
+   assinatura da Microsoft).
+3. Siga o instalador e deixe marcado **abrir quando o Windows iniciar** (o ResolveFlow fica perto do relógio e
+   avisa quando o cartão entra).
+4. Cole a chave de licença e clique em **Ativar** (a mesma chave vale no Mac e no Windows).
+5. No DaVinci: Preferences › System › General › External scripting using = **Local**. Para proxies: `winget install ffmpeg`.
+
+## Instalar no Mac
 
 1. Abra o **ResolveFlow.dmg** (vêm junto o LEIA-ME em PDF e o vídeo de instalação) e dê dois cliques em **ResolveFlow.pkg**.
 2. Como o instalador não tem assinatura da Apple, o macOS pode dizer que ele “não pode ser aberto”.

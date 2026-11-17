@@ -6,9 +6,19 @@
 
     // ---------------------------------------------------------------- download
     // O link "latest/download" nunca muda: cada versão nova sobe o mesmo nome de arquivo.
-    const urlDownload = `https://github.com/${cfg.repo}/releases/latest/download/${cfg.arquivo}`;
+    const base = `https://github.com/${cfg.repo}/releases/latest/download/`;
+    const arquivos = { mac: cfg.arquivo, win: cfg.arquivoWindows || 'ResolveFlow-Setup.exe' };
     // (o botão da barra de navegação não tem data-download: ele rola até a seção de download)
-    document.querySelectorAll('[data-download]').forEach((a) => { a.href = urlDownload; });
+    document.querySelectorAll('[data-download]').forEach((a) => { a.href = base + (arquivos[a.dataset.download] || cfg.arquivo); });
+
+    // ---------------------------------------------------------------- abas Mac / Windows em "Instalar"
+    const abas = document.querySelectorAll('.so-aba');
+    const mostrarSO = (so) => {
+        abas.forEach((b) => b.setAttribute('aria-selected', String(b.dataset.so === so)));
+        document.querySelectorAll('.so-painel').forEach((p) => { p.hidden = p.dataset.so !== so; });
+    };
+    abas.forEach((b) => b.addEventListener('click', () => mostrarSO(b.dataset.so)));
+    if (/Windows/i.test(navigator.userAgent)) mostrarSO('win');
     if ($('#linkCodigo')) $('#linkCodigo').href = `https://github.com/${cfg.repo}`;
     if ($('#versao') && cfg.versao) $('#versao').textContent = 'v' + cfg.versao;
     if ($('#versaoRodape') && cfg.versao) $('#versaoRodape').textContent = 'versão ' + cfg.versao;

@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>ResolveFlow — do cartão ao DaVinci Resolve em poucos cliques</title>
-    <meta name="description" content="App para Mac: copia cartões de câmera e drone com verificação SHA-256 para até 3 HDs, cria a estrutura do projeto e monta o projeto no DaVinci Resolve Studio com bins, preset e proxies.">
+    <meta name="description" content="App para Mac e Windows: copia cartões de câmera e drone com verificação SHA-256 para até 3 HDs, cria a estrutura do projeto e monta o projeto no DaVinci Resolve Studio com bins, preset e proxies.">
     <meta property="og:title" content="ResolveFlow — do cartão ao DaVinci Resolve em poucos cliques">
-    <meta property="og:description" content="Cópia verificada do cartão, pastas do projeto, biblioteca, bins e proxies no DaVinci Resolve. Para Mac.">
+    <meta property="og:description" content="Cópia verificada do cartão, pastas do projeto, biblioteca, bins e proxies no DaVinci Resolve. Para Mac e Windows.">
     <meta property="og:image" content="assets/app-principal.jpg">
     <meta name="theme-color" content="#121417">
     <link rel="icon" type="image/png" href="assets/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap">
-    <link rel="stylesheet" href="assets/site.css?v=11">
+    <link rel="stylesheet" href="assets/site.css?v=12">
 </head>
 <body>
 
@@ -38,7 +38,7 @@
     <!-- ============================ Hero ============================ -->
     <section class="hero">
         <div class="hero-texto">
-            <span class="selo"><span class="led"></span> App para Mac · DaVinci Resolve Studio</span>
+            <span class="selo"><span class="led"></span> Mac e Windows · DaVinci Resolve Studio</span>
             <h1>Do cartão ao <span class="grad">DaVinci Resolve</span> em poucos cliques.</h1>
             <p class="lead">Insira o cartão da câmera ou do drone. O ResolveFlow faz o <b>backup simultâneo
                 em até 3 HDs</b>, confere cada arquivo por SHA-256, cria as pastas do projeto e monta o projeto
@@ -51,7 +51,7 @@
                 <li><b>Licença</b> pessoal, sem mensalidade</li>
                 <li><b>SHA-256</b> em cada arquivo</li>
                 <li><b>3</b> HDs ao mesmo tempo</li>
-                <li>macOS · Apple Silicon</li>
+                <li>Mac · Windows</li>
             </ul>
         </div>
         <figure class="vitrine">
@@ -251,12 +251,18 @@
             <span class="kicker">04 — Instalar</span>
             <h2>Instale uma vez. Depois é só inserir o cartão.</h2>
         </div>
+        <div class="so-abas" role="tablist">
+            <button class="so-aba" role="tab" data-so="mac" aria-selected="true">Mac</button>
+            <button class="so-aba" role="tab" data-so="win" aria-selected="false">Windows <small>beta</small></button>
+        </div>
+
+        <div class="so-painel" data-so="mac">
         <figure class="video-instalar">
             <video controls playsinline preload="none" poster="assets/como-instalar-capa.jpg" width="1920" height="1080"
-                aria-label="Vídeo: como instalar o ResolveFlow em 4 passos">
+                aria-label="Vídeo: como instalar o ResolveFlow no Mac em 4 passos">
                 <source src="assets/como-instalar.mp4?v=2" type="video/mp4">
             </video>
-            <figcaption>Como instalar em 4 passos: baixar, liberar no macOS, ativar com a chave e ligar o DaVinci. 57 s, sem som. O mesmo vídeo vem junto no download.</figcaption>
+            <figcaption>Como instalar no Mac em 4 passos: baixar, liberar no macOS, ativar com a chave e ligar o DaVinci. 57 s, sem som. O mesmo vídeo vem junto no download.</figcaption>
         </figure>
         <ol class="passos">
             <li><span class="num">1</span><h3>Baixe, instale e ative</h3>
@@ -267,7 +273,7 @@
                 <p>No DaVinci: <i>Preferences › System › General › External scripting using</i> = <b>Local</b>. Salve e reinicie o DaVinci.</p></li>
         </ol>
         <div class="requisitos">
-            <div><span class="kicker">Requisitos</span>
+            <div><span class="kicker">Requisitos no Mac</span>
                 <ul>
                     <li>Mac com <b>Apple Silicon</b> (M1 ou mais novo), macOS 14 ou mais novo</li>
                     <li>DaVinci Resolve <b>Studio</b> 21</li>
@@ -280,6 +286,40 @@
 <span class="ok">OK</span>     DaVinci 21 conectado
 <span class="cinza">Desenvolvido por Netto Mello Videomaker</span></pre>
             </div>
+        </div>
+        </div>
+
+        <div class="so-painel" data-so="win" hidden>
+        <figure class="video-instalar">
+            <video controls playsinline preload="none" poster="assets/como-instalar-windows-capa.jpg" width="1920" height="1080"
+                aria-label="Vídeo: como instalar o ResolveFlow no Windows em 4 passos">
+                <source src="assets/como-instalar-windows.mp4?v=1" type="video/mp4">
+            </video>
+            <figcaption>Como instalar no Windows em 4 passos: baixar, liberar no SmartScreen, seguir o instalador e ativar com a chave, e ligar o DaVinci. 52 s, sem som.</figcaption>
+        </figure>
+        <ol class="passos">
+            <li><span class="num">1</span><h3>Baixe e instale</h3>
+                <p>Abra o <code>ResolveFlow-Setup.exe</code>. Se aparecer <i>“O Windows protegeu o computador”</i>: <b>Mais informações</b> › <b>Executar assim mesmo</b> (o instalador não tem assinatura da Microsoft). Deixe marcado <b>abrir quando o Windows iniciar</b>.</p></li>
+            <li><span class="num">2</span><h3>Ative</h3>
+                <p>Ao abrir, cole a sua <b>chave de licença</b> (a mesma vale no Mac e no Windows). O ResolveFlow fica perto do relógio e avisa quando o cartão entra.</p></li>
+            <li><span class="num">3</span><h3>Ligue o DaVinci</h3>
+                <p>No DaVinci: <i>Preferences › System › General › External scripting using</i> = <b>Local</b>. Salve e reinicie. Para proxies, rode uma vez no Terminal: <code>winget install ffmpeg</code>.</p></li>
+        </ol>
+        <div class="requisitos">
+            <div><span class="kicker">Requisitos no Windows</span>
+                <ul>
+                    <li><b>Windows 10 ou 11</b>, 64 bits</li>
+                    <li>DaVinci Resolve <b>Studio</b> 21</li>
+                    <li>Para proxies: <code>ffmpeg</code> (<code>winget install ffmpeg</code>)</li>
+                </ul></div>
+            <div class="terminal" aria-label="Versão Windows em beta">
+                <div class="barra-term"><span class="bolinhas"><i></i><i></i><i></i></span> Windows · beta</div>
+<pre><span class="ok">OK</span>     instalação testada no Windows
+<span class="ok">OK</span>     cópia + SHA-256 testadas
+<span class="cinza">beta: avise pelo WhatsApp se algo</span>
+<span class="cinza">não funcionar no seu PC</span></pre>
+            </div>
+        </div>
         </div>
     </section>
 
@@ -294,7 +334,8 @@
             <details><summary>Como recebo a chave de licença?</summary><p>Pague o Pix e mande o comprovante com o seu nome completo pelo WhatsApp. Você recebe a chave, que vai no seu nome, e o link do instalador. Ao abrir o ResolveFlow, cole a chave e clique em <b>Ativar</b>. Não precisa de internet para ativar.</p></details>
             <details><summary>O cartão é alterado de alguma forma?</summary><p>Não. O ResolveFlow só lê o cartão: nunca formata, apaga, move ou renomeia nada nele. Depois do “Concluído e verificado”, pode ejetar.</p></details>
             <details><summary>Funciona no DaVinci Resolve gratuito?</summary><p>A cópia e as pastas funcionam com qualquer versão. A montagem do projeto usa o scripting externo do DaVinci, que é um recurso do DaVinci Resolve <b>Studio</b>.</p></details>
-            <details><summary>Funciona em Mac Intel ou no Windows?</summary><p>Por enquanto, só em Macs com Apple Silicon (M1 ou mais novo).</p></details>
+            <details><summary>Funciona no Windows?</summary><p>Sim, em <b>beta</b>: Windows 10 ou 11 (64 bits), com o instalador <code>ResolveFlow-Setup.exe</code>. A mesma chave de licença vale no Mac e no Windows. Se algo não funcionar no seu PC, avise pelo WhatsApp.</p></details>
+            <details><summary>Funciona em Mac Intel?</summary><p>Por enquanto, só em Macs com Apple Silicon (M1 ou mais novo).</p></details>
             <details><summary>Por que ele pede para fechar o DaVinci?</summary><p>Para criar a biblioteca do projeto novo, o DaVinci precisa estar fechado: ele só lê a lista de bibliotecas ao abrir. Com o DaVinci fechado, o ResolveFlow cria a biblioteca e o abre sozinho. Ao abrir, clique em <b>OK</b> na lista de bibliotecas.</p></details>
             <details><summary>Como funcionam os modos de proxy e cache?</summary><p><b>Arquivos pesados</b>: Quarter, ProRes Proxy. <b>Arquivos leves</b>: Half, ProRes LT. <b>Manual</b>: você configura no DaVinci. Os codecs de mídia otimizada e render cache vêm de um preset de projeto que você salva uma vez no DaVinci; o ResolveFlow leva esse preset para todos os projetos novos.</p></details>
             <details><summary>E se um HD desconectar no meio da cópia?</summary><p>Só aquele HD pausa; os outros continuam. Quando ele volta, a cópia retoma sozinha. Se o cartão sair, tudo pausa até ele voltar.</p></details>
@@ -307,13 +348,20 @@
         <div class="baixar-conteudo">
             <img src="assets/icone.png" alt="" width="120" height="120" class="icone-baixar">
             <h2>Já comprou? Baixe aqui.</h2>
-            <p>ResolveFlow <span id="versao">v1.0.6</span> · macOS 14+ · Apple Silicon · ~13 MB</p>
-            <p>No download vêm o <b>instalador</b>, o <b>LEIA-ME</b> com o passo a passo e o <b>vídeo</b> de instalação.</p>
-            <a class="botao botao-grande" data-download href="#">
-                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0l-5-5m5 5l5-5M4 21h16"/></svg>
-                Baixar ResolveFlow
-            </a>
-            <p class="miudo">O instalador não tem assinatura da Apple: no primeiro uso, libere em <i>Privacidade e Segurança</i>.
+            <p>ResolveFlow <span id="versao">v1.0.6</span> · a mesma chave vale no Mac e no Windows</p>
+            <div class="downloads">
+                <a class="botao botao-grande" data-download="mac" href="#">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0l-5-5m5 5l5-5M4 21h16"/></svg>
+                    Baixar para Mac
+                </a>
+                <a class="botao botao-grande fantasma" data-download="win" href="#">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0l-5-5m5 5l5-5M4 21h16"/></svg>
+                    Baixar para Windows <small>beta</small>
+                </a>
+            </div>
+            <p class="miudo"><b>Mac:</b> ResolveFlow.dmg (~13 MB) com o instalador, o LEIA-ME e o vídeo · Apple Silicon, macOS 14+.<br>
+                <b>Windows:</b> ResolveFlow-Setup.exe (~35 MB) · Windows 10/11 64 bits.<br>
+                Os instaladores não têm assinatura da Apple nem da Microsoft: no primeiro uso, libere como mostram os vídeos.
                 <a id="linkCodigo" href="#">Guia e versões anteriores</a></p>
             <p class="convite-cafe">Ainda não tem a chave? <a href="#comprar">Comprar</a></p>
         </div>
@@ -366,8 +414,8 @@
         sem vínculo com a Blackmagic Design.</p>
 </footer>
 
-<script src="assets/config.js?v=11"></script>
-<script src="assets/pix.js?v=11"></script>
-<script src="assets/site.js?v=11"></script>
+<script src="assets/config.js?v=12"></script>
+<script src="assets/pix.js?v=12"></script>
+<script src="assets/site.js?v=12"></script>
 </body>
 </html>
