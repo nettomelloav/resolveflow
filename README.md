@@ -1,6 +1,6 @@
 # ResolveFlow
 
-**Do cartão ao DaVinci Resolve em poucos cliques.** App para Mac (R$ 49,99, pagamento único via Pix) que copia cartões de câmera e drone
+**Do cartão ao DaVinci Resolve em poucos cliques.** App para Mac (R$ 49,97, pagamento único via Pix) que copia cartões de câmera e drone
 com verificação SHA-256 para até 3 HDs, cria a estrutura do projeto e monta o projeto no
 DaVinci Resolve Studio: biblioteca, preset, bins organizados e proxies.
 

@@ -15,7 +15,7 @@
 
     // ---------------------------------------------------------------- WhatsApp do comprovante
     if ($('#linkWhats') && cfg.whatsapp) {
-        const texto = `Olá! Paguei o Pix de R$ ${cfg.preco || '49,99'} do ResolveFlow. Segue o comprovante. Meu nome completo: `;
+        const texto = `Olá! Paguei o Pix de R$ ${cfg.preco || '49,97'} do ResolveFlow. Segue o comprovante. Meu nome completo: `;
         $('#linkWhats').href = `https://wa.me/${cfg.whatsapp}?text=${encodeURIComponent(texto)}`;
     }
 
@@ -57,8 +57,8 @@
             aviso.classList.toggle('copiado', ok);
         };
         $('#copiarPix').addEventListener('click', async () => avisar(await copiar(pix.copiaECola),
-            'Pix copia e cola copiado (R$ 49,99)! Cole no app do seu banco e depois mande o comprovante.'));
+            'Pix copia e cola copiado (R$ 49,97)! Cole no app do seu banco e depois mande o comprovante.'));
         $('#copiarChave').addEventListener('click', async () => avisar(await copiar(pix.chave.replace(/\D/g, '')),
-            'Chave copiada! Pague R$ 49,99 e depois mande o comprovante.'));
+            'Chave copiada! Pague R$ 49,97 e depois mande o comprovante.'));
     }
 })();
