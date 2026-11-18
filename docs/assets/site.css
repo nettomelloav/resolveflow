@@ -322,5 +322,3 @@ h2 { font-size: clamp(28px, 3.6vw, 42px); line-height: 1.12; letter-spacing: -.0
     html:not(.forcar-anim) .fase { fill: var(--suave); }
 }
 .recurso h3 .novo { font-style: normal; font-size: 10px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: #05080b; background: linear-gradient(90deg, #38d9ff, #3b82ff); border-radius: 999px; padding: 2px 8px; margin-left: 6px; vertical-align: 3px; }
-.novidades { margin: 6px auto 18px; max-width: 640px; font-size: 14px; color: var(--suave); }
-.novidades b { color: var(--ciano); }
